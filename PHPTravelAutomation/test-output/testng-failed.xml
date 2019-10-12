@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="PHPAUTOMATION.PHPTravelAutomation.Test5">
+      <class name="PHPAUTOMATION.PHPTravelAutomation.Test4">
         <methods>
-          <include name="test5"/>
+          <include name="test1"/>
         </methods>
-      </class> <!-- PHPAUTOMATION.PHPTravelAutomation.Test5 -->
+      </class> <!-- PHPAUTOMATION.PHPTravelAutomation.Test4 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

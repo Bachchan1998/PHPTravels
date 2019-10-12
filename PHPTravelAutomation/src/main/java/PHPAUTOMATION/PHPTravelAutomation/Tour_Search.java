@@ -9,7 +9,7 @@ import org.openqa.selenium.By;
 	static By Tour_Search=By.xpath("//*[@id=\"s2id_autogen3\"]/a");
 	static By Select_City=By.xpath("//div[contains(text(),'Old and New Delhi City Tour')]");
 	static By Check_In=By.xpath("//div[@id='tchkin']//input[@placeholder='Check in']");
-	static By Month=By.xpath("//div[11]//div[1]//tr[1]//th[2]");
+	static By Month=By.xpath("/html/body/div[11]/div[1]/table/thead/tr[1]/th[2]");
 	static By Move=By.xpath("//div[11]//div[1]//tr[1]//th[3]");
 	//static By Date=By.xpath("/html/body/div[11]/div[1]/table/tbody/tr/td[@class='day '][contains(text(),"+prop.getProperty("TourDate")+")]");
 	static By Guest=By.xpath("//*[@id=\"adults\"]");
@@ -27,7 +27,7 @@ import org.openqa.selenium.By;
 		
 // CITY NAME FIELD
 	    Thread.sleep(1000);
-	       driver.findElement(By.xpath("//button[@id='cookyGotItBtn']")).click();
+	      // driver.findElement(By.xpath("//button[@id='cookyGotItBtn']")).click();
 	       driver.findElement(Tour_Search).click();
 	       driver.findElement(Select_City).click();
 	       

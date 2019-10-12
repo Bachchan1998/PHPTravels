@@ -16,7 +16,7 @@ public class Reg_Page extends Base
 	static By Email = By.xpath("//input[@placeholder='Email']");
 	static By Password = By.xpath("//input[@placeholder='Password']");
 	static By C_Password = By.xpath("//input[@placeholder='Confirm Password']");
-	static By SignUp_Button=By.xpath("//*[@id=\"headersignupform\"]/div[9]/button");
+	static By SignUp_Button=By.xpath("//button[@class='signupbtn btn_full btn btn-action btn-block btn-lg']");
 	
 	
 
@@ -32,13 +32,8 @@ public class Reg_Page extends Base
 		driver.findElement(Email).sendKeys(prop.getProperty("Email"));
 		driver.findElement(Password).sendKeys(prop.getProperty("Pwd"));
 		driver.findElement(C_Password).sendKeys(prop.getProperty("Cpwd"));
-		driver.findElement(By.xpath("//button[@id='cookyGotItBtn']")).click();
+		//driver.findElement(By.xpath("//button[@id='cookyGotItBtn']")).click();
 		driver.findElement(SignUp_Button).click();
-		
-		
+	
  }
-	
-	
-	
-
 }

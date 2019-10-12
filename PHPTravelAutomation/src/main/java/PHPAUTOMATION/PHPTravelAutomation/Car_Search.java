@@ -11,7 +11,7 @@ public class Car_Search extends Base{
 	
 	static By Departure_Date = By.xpath("//*[@id='departcar']");
 	static By Departue_Month = By.xpath("/html/body/div[12]/div[1]/table/thead/tr[1]/th[2]");
-	static By Next = By.xpath("//div[12]//div[1]//tr[1]//th[3]");
+	static By Next = By.xpath("/html/body/div[12]/div[1]/table/thead/tr[1]/th[3]");
 	
 	static By Return_Date = By.xpath("//input[@id='returncar']");
 	static By Return_Month = By.xpath("/html/body/div[13]/div[1]/table/thead/tr[1]/th[2]");
@@ -37,20 +37,14 @@ public class Car_Search extends Base{
 	static By Address=By.xpath("//input[@placeholder='Address']");
 	static By County_DDown=By.xpath("//input[@class='select2-input']");
 	static By Select_Country=By.xpath("//*[@id='select2-drop']/ul/li[2]/div");
-			
-	
-	
-	
-	
-	
-	
+				
 	public static void CarSearch() throws Exception 
 	
 	{
 		//driver.get(prop.getProperty("URL"));
 		driver.findElement(Car).click();
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("//button[@id='cookyGotItBtn']")).click();
+		//driver.findElement(By.xpath("//button[@id='cookyGotItBtn']")).click();
 		driver.findElement(PickUp).click();
 		driver.findElement(PickUp_City).click();
 		
@@ -72,12 +66,14 @@ public class Car_Search extends Base{
 				
 			else
 		{
+			//Thread.sleep(2000);	
 			driver.findElement(Next).click();
 		}
 	}
 
-		driver.findElement(By.xpath("/html/body/div[12]/div[1]/table/tbody/tr/td[contains(text(),"+prop.getProperty("D_Day")+")]")).click();
-		 
+		//driver.findElement(By.xpath("/html/body/div[12]/div[1]/table/tbody/tr/td[contains(text(),"+prop.getProperty("D_Day")+")]")).click();
+		//driver.findElement(By.xpath("/html[1]/body[1]/div[16]/div[1]/table[1]/tbody[1]/tr/td[@class='day '][contains(text(),\"16\")]")).click();
+		driver.findElement(By.xpath("/html[1]/body[1]/div[12]/div[1]/table[1]/tbody[1]/tr/td[@class='day '][contains(text(),\"18\")]")).click(); 
 // DEPARTURE TIME FIELD
 		
 				driver.findElement(Departure_Time).click();	
@@ -105,8 +101,7 @@ public class Car_Search extends Base{
 		}
 	
 	}
-		driver.findElement(By.xpath("/html/body/div[13]/div[1]/table/tbody/tr/td[contains(text(),"+prop.getProperty("R_Day")+")]")).click();
-		
+		driver.findElement(By.xpath("/html[1]/body[1]/div[13]/div[1]/table[1]/tbody[1]/tr/td[@class='day '][contains(text(),'22')]")).click();
 		
 // DEPARTURE TIME FIELD
 		

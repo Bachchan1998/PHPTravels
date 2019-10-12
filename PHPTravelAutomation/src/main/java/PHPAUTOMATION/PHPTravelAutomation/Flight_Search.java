@@ -75,7 +75,8 @@ driver.findElement(Departure).click();
 	//driver.findElement(By.xpath("//select[@id='minfant']")).click();
 	//driver.findElement(By.xpath("//select[@id='minfant']//option[contains(text(),"+prop.getProperty("infant")+")]")).click();
 	driver.findElement(By.xpath("//button[@id='sumManualPassenger']")).click();
-	driver.findElement(By.xpath("//*[@id='thflights']/div[6]/button")).click();
+	//driver.findElement(By.xpath("//button[@id='cookyGotItBtn']")).click();
+	driver.findElement(By.xpath("//*[@id=\"thflights\"]/div[6]/button")).click();
 	
 	}	
 }

@@ -23,8 +23,8 @@ import org.openqa.selenium.TakesScreenshot;
 		driver.findElement(login).click();
 		driver.findElement(email).sendKeys(prop.getProperty("Email"));
 		driver.findElement(password).sendKeys(prop.getProperty("Pwd"));
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//button[@id='cookyGotItBtn']")).click();
+		//Thread.sleep(2000);
+		//driver.findElement(By.xpath("//button[@id='cookyGotItBtn']")).click();
 		driver.findElement(login_button).click();
 		
 // SCREEN SHOT
